@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hebrew Date Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Gregorian to Hebrew Date Converter</h1>
+
+    <form id="converter-form">
+      <label for="gregorian-date">Gregorian date</label>
+      <input type="date" id="gregorian-date" name="date" required>
+
+      <fieldset>
+        <legend>Before or after sunset?</legend>
+
+        <label>
+          <input type="radio" name="sunset" value="before" checked>
+          Before sunset
+        </label>
+
+        <label>
+          <input type="radio" name="sunset" value="after">
+          After sunset
+        </label>
+      </fieldset>
+
+      <button type="submit">Convert date</button>
+    </form>
+
+    <output id="hebrew-date" lang="he" dir="rtl"></output>
+    <p id="error-message" role="alert"></p>
+  </main>
+</body>
+</html>
